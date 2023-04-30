@@ -1,0 +1,373 @@
+html {
+  font-size: 20px;
+}
+body {
+  font-family: 'Lora', serif;
+  margin: 0;
+  font-size:30px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color:white;
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 15px;
+  }
+}
+.button,
+#links {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+header h1 {
+  font-weight: bold;
+  text-align: center;
+  font-size:2em;
+  z-index: 1;
+  letter-spacing: 1px;
+  width:500px;
+}
+@media (max-width: 500px) {
+  header h1{
+    width:300px;
+    letter-spacing: 4px;
+  }
+}
+header{
+  color:white;
+  background-image:url("https://www.gedistatic.it/content/gedi/img/huffingtonpost/2022/08/30/102726318-119ec69a-2cb1-4c2f-9e91-15261bf6d081.jpg?webp");
+  height:500px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 500px) {
+  header {
+    height:300px;
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+    line-height: 1.2;
+  }
+}
+
+header nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+  font-size: 14px;
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  
+  background-color:gray;
+  
+}
+#links a {
+   margin: 20px;
+   padding: 5px 15px;
+}
+a.button {
+  padding: 10px 15px;
+  border: 2px solid white;
+  border-radius: 100px;
+}
+
+a.button:hover {
+  background-color: white;
+  color: black;
+}
+#menu{
+  display:none;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+#menu div {
+  width: 20px;
+  height: 4px;
+  background-color: white;
+  margin: 5px 0;
+}
+@media (max-width: 500px) {
+  #links {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+}
+
+div#profile{
+  display:flex;
+  justify-content: center;
+}
+#profile img{
+    margin-top: -50px;
+    height:100px;
+    width: 100px;
+    border: 2px solid LIGHTGRAY;
+    border-radius: 50px;
+    z-index: 1;
+}
+@media (max-width:500px){
+  #profile img{
+    margin-top: -20px;
+    height:50px;
+    width: 50px;
+  }
+}
+
+.main h1{
+  font-size: 1rem;
+  font-weight: normal;
+  color: rgba(26,26,26,.9);
+  text-align:center;
+}
+@media (max-width: 500px) {
+  .main h1 {
+    font-size:15px;
+  }
+}
+.sezione{
+  display:flex;
+  width:66.67vw;
+  margin-left:auto;
+  margin-right:auto;
+}
+#principale{
+  display:flex;
+  flex-direction:column;
+  width:66.67vw;
+  margin-top:60px;
+  margin-bottom:0;
+  margin-right:auto;
+  margin-left:auto;
+}
+@media(max-width:500px){
+  #principale{
+    width:100%;
+    margin:0;
+  }
+  
+  div.contenuto div h2{
+    font-size:1rem;
+  }
+  .sezione{
+    width:100%;
+  }
+  
+}
+
+.contenuto div {
+  flex-grow: 1;
+  padding: 0px;
+}
+.contenuto{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:lightblue;
+  width:66.67vw;
+  margin-right:auto;
+  margin-left:auto;
+  margin-top:0;
+}
+
+
+.contenuto p{
+  font-weight:normal;
+  margin-top:20px;
+  margin-bottom:20px;
+  font-size:1rem;
+}
+h2{
+  margin-top:0;
+  margin-bottom:0;
+  font-size:2rem;
+}
+.contenuto img{
+  width:100%;
+  height:500px;
+  margin-bottom:120px;
+}
+@media (max-width: 500px) {
+  .contenuto {
+    padding:0;
+    width:90%;
+    margin:auto;
+  }
+ 
+  .contenuto p{
+    font-size:1rem;
+  }
+  .contenuto img{
+    width:100%;
+    height:200px;
+    margin:0;
+    margin-bottom:30px;
+  } 
+}
+
+
+section {
+  text-align: left;
+}
+@media (max-width: 500px) {
+  section {
+    margin: 0 5px;
+  }
+}
+footer{
+    background-color: gray;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:120px;
+    width:100%;
+    color:black;
+     
+}
+footer p{
+  font-size:1rem;
+  text-align:center;
+}
+@media (max-width: 500px) {
+  footer {
+    width:100%;
+    height:60px;
+    margin:0;
+  }
+  footer p{
+    font-size:15px;
+  }
+}
+
+
+
+
+div#titolo,form h1{
+  font-size:1rem;
+}
+
+#opere_visualizzate,#eventi_visualizzati{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#opere_visualizzate div,#eventi_visualizzati div{
+  background-color: #f4f4f4;
+  border: 1px solid #dcdcdc;
+  box-sizing: border-box;
+  width: 32.5%;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top:20px;
+  display:flex;
+  flex-direction:column;
+}
+
+
+  
+#opere_visualizzate img,#eventi_visualizzati img {
+    width: 400px;
+    margin:auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    height: 300px;
+}
+
+div span.didascalia,span.nome_artista,span.luogo_evento{
+  margin:0;
+  text-align: center;
+  font-size:medium;
+}
+
+@media (max-width: 500px) {
+  section#opere_visualizzate,section#eventi_visualizzati{
+   margin:20px 20px;
+  }
+  #opere_visualizzate div,#eventi_visualizzati div{
+   margin:auto;
+   width:66.67vw;
+   margin-bottom:10px;
+  }
+  div#titolo{
+   text-align: center;
+  }
+  span.didascalia{
+    margin-top:10px;
+    margin-bottom:10px;
+    text-align: center;
+    font-size:small;
+  }
+  #opere_visualizzate img,#eventi_visualizzati img{
+    max-width:200px;
+    max-height:200px;
+  } 
+}
+
+
+#modale.hidden{
+  display:none;
+}
+
+#modale{
+  position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 2;
+
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+#modale img{
+  height:50%;
+  border: 1px solid black;
+  justify-content: center;
+	align-items: center; 
+}
+
+.no-scroll{
+  overflow:hidden;
+}
+
+form#Eventi,form#Artista,div#titolo{
+  width:66.67vw;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+
